@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:latest'
+    entrypoint: gcloud
+    args:
+      - functions
+      - deploy
+      - ms-core-factibility
+      - --runtime=python310
+      - --trigger-http
+      - --allow-unauthenticated
+      - --entry-point=main
+      - --source=.
+
+timeout: "3600s"

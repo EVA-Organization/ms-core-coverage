@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+geopandas
+shapely
+lxml
+pyproj
+pandas
+google-cloud-functions
+functions-framework
+mangum
+httpx
+python-dotenv
